@@ -31,7 +31,7 @@ class App extends Component {
   }
   parseVideoParams() {
     let videoIDs, videoOpts = [];
-    let pathname = this.props.location.pathname;
+    let pathname = this.props.location.pathname.replace('/multiyoutube','');
     if (pathname[0] === '/') {
       videoIDs = pathname.replace('/','').split('/');
     }

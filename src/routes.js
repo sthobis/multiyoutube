@@ -5,8 +5,8 @@ import App from './components/App';
 
 const Routes = (props) => (
   <Router {...props}>
-    <Route path="/" component={Home} />
-    <Route path="*" component={App} />
+    <Route path="/multiyoutube" component={Home} />
+    <Route path="/multiyoutube/*" component={App} />
   </Router>
 );
 
