@@ -114,9 +114,8 @@ class App extends Component {
         {
           this.state.videoParamList.map((video, idx) => {
             return (
-              <div style={{display:'inline-block', marginTop:'-4px'}} >
+              <div style={{display:'inline-block', marginTop:'-4px'}} key={idx}>
                 <Youtube
-                  key={idx}
                   videoId={video.id}
                   opts={video.opts}
                   onReady={this.videoIsReady}
